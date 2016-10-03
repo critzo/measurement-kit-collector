@@ -3,10 +3,12 @@
 
 "use strict";
 
+const bodyParser = require("body-parser");
 const express = require("express");
 const uuid = require("uuid4");
 
 const app = express();
+app.use(bodyParser.json({limit: "50mb"}));
 
 app.post("/report/", (request, response) => {
     console.log("OPEN");

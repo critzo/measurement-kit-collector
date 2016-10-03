@@ -1,6 +1,7 @@
 {
   "author": "Simone Basso",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "uuid4": "^1.0.0"
   },
