@@ -12,7 +12,7 @@ app.use(bodyParser.json({limit: "50mb"}));
 
 app.post("/report/", (request, response) => {
     console.log("OPEN");
-    console.log(request.body);
+    //console.log(request.body);
     response.json({
         report_id: uuid()
     });
@@ -21,14 +21,14 @@ app.post("/report/", (request, response) => {
 app.post("/report/:reportId", (request, response) => {
     console.log("UPDATE");
     console.log(request.params.reportId);
-    console.log(request.body);
+    //console.log(request.body);
     response.json({});
 });
 
 app.post("/report/:reportId/close", (request, response) => {
     console.log("CLOSE");
     console.log(request.params.reportId);
-    console.log(request.body);
+    //console.log(request.body);
     response.json({});
 });
 
