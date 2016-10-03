@@ -23,7 +23,7 @@ app.post("/report/:reportId", (request, response) => {
     response.json({});
 });
 
-app.post("/report/:reportId/close", (_, response) => {
+app.post("/report/:reportId/close", (request, response) => {
     console.log("CLOSE");
     console.log(request.params.reportId);
     console.log(request.body);
