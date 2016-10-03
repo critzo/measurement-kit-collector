@@ -1,0 +1,15 @@
+{
+  "author": "Simone Basso",
+  "dependencies": {
+    "express": "^4.14.0",
+    "uuid4": "^1.0.0"
+  },
+  "engines": {
+    "node": "6.x"
+  },
+  "license": "ISC",
+  "main": "index.js",
+  "name": "measurement-kit-collector",
+  "repository": "https://github.com/bassosimone/measurement-kit-collector",
+  "version": "0.0.1"
+}
