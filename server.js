@@ -8,18 +8,25 @@ const uuid = require("uuid4");
 
 const app = express();
 
-app.post("/report/", (_, response) => {
+app.post("/report/", (request, response) => {
+    console.log("OPEN");
+    console.log(request.body);
     response.json({
         report_id: uuid()
     });
 });
 
-app.post("/report/:reportId", (_, response) => {
-    //console.log(request.params.reportId);
+app.post("/report/:reportId", (request, response) => {
+    console.log("UPDATE");
+    console.log(request.params.reportId);
+    console.log(request.body);
     response.json({});
 });
 
 app.post("/report/:reportId/close", (_, response) => {
+    console.log("CLOSE");
+    console.log(request.params.reportId);
+    console.log(request.body);
     response.json({});
 });
 
